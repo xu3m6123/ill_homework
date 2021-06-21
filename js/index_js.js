@@ -1,6 +1,6 @@
 
 
-const illdata = d3.json("/js/Day_19CoV.json").then(function (data) {
+const illdata = d3.json("https://raw.githubusercontent.com/xu3m6123/ill_homework/main/js/Day_19CoV.json").then(function (data) {
     var width = 1200;
     var height = 400;
 
