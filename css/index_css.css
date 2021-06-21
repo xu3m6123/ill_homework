@@ -335,13 +335,21 @@ align-items: center;
 }
 .cD_title{
     font-size: 32px;
+    color: white;
 }
 .illeffect:hover{
     opacity: 50%;
 }
 /*footer*/
 .footer{
+    display: flex;
+    justify-content: center;
     height:100px;
     width: 100%;
     background-color: #569e88;
+}
+.footer p{
+    line-height: 36px;
+    margin: 0;
+    width:80%
 }
