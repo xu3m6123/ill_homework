@@ -1,0 +1,347 @@
+body{
+    box-sizing: border-box;
+    margin: 0px;
+}
+.heading{
+    background-color: #56a7a7;
+    width:auto;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36pt;
+    letter-spacing: 30px;
+    color:white;
+    font-weight: bold;
+}
+.nav{
+    justify-content: center;
+}
+.nav_ul{
+    display: flex;
+flex-direction: row;
+list-style: none;
+justify-content: center;
+width: 70%;
+padding: 0;
+margin: 30px auto;
+align-content: space-between;
+}
+.nav_ul li a{
+padding: 0px 50px;
+color: #5b5b5b;
+text-decoration: none;
+}
+.nav_ul li:hover{
+    background-color: #56a7a7;
+}
+.nav_ul li a:hover{
+    color: white;
+}
+.li_s{
+    border-right-style:solid ;
+    border-color: #56a7a7;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*社交距離*/
+.keepDistance{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+height: 500px;
+margin: 50px 0 0 0;
+    /*background-color: rgb(120, 159, 219);*/
+}
+.kD_inside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.kD_inside a{
+font-size: 24px;
+text-align: center;
+line-height: 36px;
+font-weight: bold;
+}
+.kD_inside img{
+    width:360px;
+    height:360px;
+    border-radius: 10px;
+}
+#kD_referencePos{
+    position: relative;
+}
+#photo2{
+    position: absolute;
+    float: left;
+    z-index: 2;
+    margin-top: -375px;
+    margin-left: -180px;
+}
+.kD_btn{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.kD_btn button{
+width:30%;
+height:28px;
+font-size: 16px;
+}
+.kD_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    color: #c4c4c4;
+    font-size: 24px;
+}
+.kD_outside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.kD_outside a{
+font-size: 24px;
+text-align: center;
+line-height: 36px;
+font-weight: bold;
+}
+.kD_outside img{
+    width:360px;
+    height:360px;
+}
+#kD_referencePos2{
+    position: relative;
+}
+#photo4{
+    position: absolute;
+    float: left;
+    z-index: 2;
+    margin-top: -375px;
+    margin-left: -180px;
+}
+/*防疫措施*/
+h1{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 46px;
+    margin-bottom: 150px;
+}
+/*口罩*/
+.wearMask{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    height:500px;
+    background-color: #f7f7f5;
+    margin: 0 auto;
+}
+.wM_data{
+display: flex;
+align-items: center;
+}
+.wM_data img{
+    width:600px;
+    height: fit-content;
+    border-radius: 30px;
+    background-color: #f7f7f5;
+}
+.wM_content{
+    display: flex;
+    flex-direction: column;
+    width:680px;
+}
+.wM_c_text{
+    display: flex;
+    flex-direction: row;
+}
+.wM_c_text p{
+    line-height: 36px;
+}
+.wM_c_text b{
+    color: #62a5a5;
+}
+.wM_c_list{
+    margin: 30px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/*洗手*/
+.handWashing{
+    width: 80%;
+    /*background-color: #569e88;*/
+    margin: 150px auto;
+    
+}
+.hW_c_mainImg{
+    box-shadow:1px 1px 10px #a8a8a8;
+    border-radius: 30px;
+    background-color: #f7f7f5;
+    height:490px;
+}
+.hW_t{
+    display: flex;
+    justify-content: center;
+    width:600px;
+    font-size: 32px;
+    letter-spacing: 30px;
+    color: #225366;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.hW_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:500px;
+}
+.hW_c_mainImg img{
+    width:600px;
+    height:480px;
+    margin-right: 20px;
+}
+.hW_c_sencond{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.hW_c_s_img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.hW_c_s_text{
+    width:680px;
+    line-height: 36px;
+}
+.hW_c_s_text b{
+    color: #62a5a5;
+}
+
+/*卡片*/
+.tradingTools{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:500px;
+    width: 80%;
+    background-color: #f7f7f5;
+    margin: 100px auto;
+}
+.tT_pos{
+    position: relative;
+    width:400px;
+    height: 400px;
+}
+.tradingTools img{
+    position: absolute;
+    margin-top: 50px;
+    transform: rotate(35deg);
+}
+#tT_card01{
+    float: left;
+    z-index: 2;
+    margin-left: 250px;
+}
+#tT_card02{
+    float: left;
+    z-index: 3;
+    margin-left: 175px;
+}
+#tT_card03{
+    float: left;
+    z-index: 4;
+    margin-left: 100px;
+}
+#tT_card01:hover{
+    -webkit-filter:brightness(0.7);/*變亮濾鏡*/
+    z-index: 5;
+}
+#tT_card02:hover{
+    -webkit-filter:brightness(0.7);
+    z-index: 5;
+}
+#tT_card03:hover{
+    -webkit-filter:brightness(0.7);
+    z-index: 5;
+}
+.tT_content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:50%;
+}
+.tT_t{
+    width:600px;
+    font-size: 32px;
+    letter-spacing: 5px;
+    color: #225366;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#tT_c_text01{
+    position: absolute;
+    float: left;
+    margin-top: 80px;
+    width: 95%;
+    line-height: 36px;
+    opacity: 0%;
+}
+#tT_c_text02{
+    position: absolute;
+    float: left;
+    margin-top: 80px;
+    width: 95%;
+    line-height: 36px;
+    opacity: 0%;
+}
+#tT_c_text03{
+    position: absolute;
+    float: left;
+    margin-top: 80px;
+    width: 95%;
+    line-height: 36px;
+    opacity: 100%;
+}
+
+/*疫情*/
+.covid19Data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:500px;
+    width: 100%;
+    background-color: #569e88;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.covid19Data p{
+    margin: 0 0 10px 0;
+}
+.cD_title{
+    font-size: 32px;
+}
+.illeffect:hover{
+    opacity: 50%;
+}
+/*footer*/
+.footer{
+    height:100px;
+    width: 100%;
+    background-color: #569e88;
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>安全防疫守則</title>
+    <link href="./css/index_css.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script type="text/javascript" src="./js/d3.js" charset="utf-8"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+    
+    <div class="heading">安全防疫守則</div>
+    <div class="nav">
+        <ul class="nav_ul">
+            <li class="li_s"><a href="#kD">社交距離</a></li>
+            <li class="li_s"><a href="#wM">戴好口罩</a></li>
+            <li class="li_s"><a href="#hW">時常洗手</a></li>
+            <li class="li_s"><a href="#tT">交易工具</a></li>
+            <li><a href="#cD">疫情數據</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="keepDistance" id="kD">
+            <!--保持社交距離-->
+            <div class="kD_inside">
+                <a>室內<br>保持1.5公尺</a>
+                <img id="photo" src="./img/location01.jpg">
+                <div id="kD_referencePos">
+                    <img id="photo2" src="./img/reference01.png">
+                </div>
+                <div class="kD_btn">
+                    <button onclick="changeRF()">參考物</button><button onclick="change()">場所</button>
+                </div>
+            </div>
+            <p class="kD_text">保 持 社 交 距 離</p>
+            <div class="kD_outside">
+                <a>室外<br>保持1公尺</a>
+                <img id="photo3" src="./img/location11.jpg">
+                <div id="kD_referencePos2">
+                    <img id="photo4" src="./img/reference11.png">
+                </div>
+                <div class="kD_btn">
+                    <button onclick="changeRF2()">參考物</button><button onclick="change2()">場所</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <h1>-自我防護措施-</h1>
+    <div data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom" class="wearMask" id="wM">
+        <div class="wM_data"><img src="./img/wm01-01.png"></div>
+        <div class="wM_content">
+            <div class="wM_c_text">
+                <p>戴口罩能有效防止自己的飛沫傳到更遠地方造成他人的感染。如果你沒有帶口罩，病毒會隨著飛沫的水氣傳遞到2M的範圍。
+                    若水氣蒸散，這些帶有病毒的蒸氣因為蒸發的關係變成細小的微粒，因為太小而使他人的口罩無法阻擋而造成他人被傳染。
+                    <b>因此我們都需要戴好口罩，這樣子有病毒的飛沫在還很大顆的水氣狀態時就會被口罩阻擋下來，讓雙方都平安。</b>有時候你
+                    可能想｢我不會中獎｣，事實上，COVID-19有許多無症狀的患者，有可能是你、我、任何人，所以最好的做法就是大家都
+                    戴上口罩避免任何傳播的可能。
+                </p>
+            </div>
+            <div class="wM_c_list">
+                <img src="./img/wm02-01.png">
+            </div>
+        </div>
+
+    </div>
+    <div data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom" class="handWashing" id="hW">
+        <p class="hW_t">-勤洗手很重要-</p>
+        <div class="hW_content">
+            <div class="hW_c_mainImg">
+                <img src="./img/wH01-01.png">
+            </div>
+            <div class="hW_c_sencond">
+                <div class="hW_c_s_img">
+                    <img src="./img/wH02-01.png">
+                </div>
+                <p class="hW_c_s_text">
+                    勤洗手可以沖走髒汙，所以是非常重要的衛生習慣。現在疫情嚴峻，洗手對於防止感染COVID-19就顯得更重要了！不過，重點是你必須使用<b>肥皂洗手</b>。
+                    如同左圖所示，肥皂的分子結構有兩個部分，親水和親油，對於COVID-19的病毒來說，親油的分子會將包覆病毒的油脂外殼拉開，使病毒被拆散、毀壞，
+                    而親水分子將剛剛拆開的油脂外殼融於水並和病毒碎片一起被水流沖走。
+                    <br>現在你知道肥皂洗手的重要性了！再來你需要正確的洗手步驟，如上圖所示，<b>正確的洗手20秒</b>後，就可以確保手上的髒汙被肥皂分解、被水沖走，隨意的洗手可是沒有效果的。
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom" class="tradingTools" id="tT">
+        <div class="tT_pos">
+            <img id="tT_card01" src="./img/card01-01.png" onclick="changetT01()">
+            <img id="tT_card02" src="./img/card03-01.png" onclick="changetT02()">
+            <img id="tT_card03" src="./img/card02-01.png" onclick="changetT03()">
+        </div>
+        <div class="tT_content">
+            <div class="tT_t">- 使 用 卡 片 或 電 子 設 備 付 費 -</div>
+            <p id="tT_c_text01">使用卡片交易可以避免付款與找零的肢體接觸造成傳染的風險。<br>悠遊卡適用店家：
+                <br>交通運輸：捷運、公車(台鐵、高鐵目前皆採對號座，因此不適用)
+                <br>超商超市：7-ELEVEN、全家、萊爾富、OK
+            </p>
+            <p id="tT_c_text02">使用卡片交易可以避免付款與找零的肢體接觸造成傳染的風險。<br>郵局VISA金融卡適用店家：
+                <br>可於全球貼有VISA標誌的特約商店刷卡消費。
+                <br>可於網購、郵購、傳真、電話及電視購物等線上刷卡消費。
+                <br>可於貼有「台灣Pay」標誌的實體或網路特約商店以插卡或連結讀卡機設備，並輸入晶片密碼方式進行消費扣款交易。
+                <br>卡面有水波紋感應消費功能之郵政VISA金融卡，可於全球「VISA payWave」標誌之特約商店刷卡感應消費。
+                <br>可作為雲端發票載具(含HCE手機VISA卡)，本功能無需申請。
+
+            </p>
+            <p id="tT_c_text03">使用卡片交易可以避免付款與找零的肢體接觸造成傳染的風險。<br>LinePay適用店家：
+                <br>超商超市：7-ELEVEN、全家、萊爾富、OK、家樂福、大潤發、屈臣氏...等。
+                <br>餐飲店：麥當勞、肯德基、漢堡王、頂呱呱、星巴克...等。
+                <br>網購平台：PChome、博客來、momo購物、yahoo購物中心...等。
+                <br>生活商家：金玉堂、鞋全家福、小林眼鏡、燦坤...等。
+
+            </p>
+        </div>
+    </div>
+    <div class="covid19Data" id="cD">
+        <p class="cD_title">- 每 日 疫 情 數 據 -</p>
+        <p>希望大家作好自我防護，平安健康</p>
+        <div data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom" id="cD_caseAmount"></div>
+    </div>
+    <div class="footer"></div>
+    <script src="./js/index_js.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+
+</html>
